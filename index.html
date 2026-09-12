@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mandira Das — Graphic Design Portfolio</title>
+<meta name="description" content="Mandira Das — Graphic Design Portfolio featuring poster, campaign, service advertisement, cultural and travel design concepts.">
+<style>
+:root {
+  --bg:#f6f3ee; --ink:#171717; --muted:#68645e; --line:#d9d3ca; --card:#fffdf9;
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,Arial,sans-serif;line-height:1.65}
+a{color:inherit;text-decoration:none}
+.container{width:min(1120px,92%);margin:auto}
+nav{position:sticky;top:0;z-index:10;background:rgba(246,243,238,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav-in{height:72px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:800;letter-spacing:.04em}
+.nav-links{display:flex;gap:24px;font-size:14px}
+.hero{padding:100px 0 90px;display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center}
+.hero h1{font-size:clamp(52px,8vw,96px);line-height:.95;margin:12px 0 24px;letter-spacing:-.06em}
+.hero p{font-size:18px;color:var(--muted);max-width:650px}
+.pill{display:inline-block;border:1px solid var(--line);padding:7px 13px;border-radius:999px;font-size:12px;letter-spacing:.1em;text-transform:uppercase}
+.hero img{width:100%;max-height:620px;object-fit:cover;border-radius:24px;box-shadow:0 18px 50px rgba(0,0,0,.10)}
+.btn{display:inline-block;margin-top:22px;background:var(--ink);color:white;padding:12px 18px;border-radius:999px;font-size:14px}
+.section-head{padding:70px 0 30px}
+.section-head h2{font-size:44px;letter-spacing:-.04em;margin:0 0 8px}
+.section-head p{color:var(--muted);max-width:700px}
+.work-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;padding-bottom:90px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden;transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-5px);box-shadow:0 15px 40px rgba(0,0,0,.08)}
+.card img{width:100%;aspect-ratio:4/5;object-fit:cover;display:block}
+.card-body{padding:22px}
+.card-body span,.eyebrow{font-size:11px;text-transform:uppercase;letter-spacing:.13em;color:var(--muted)}
+.card h3{font-size:28px;margin:5px 0 8px}
+.card p{color:var(--muted);margin:0}
+.case{display:grid;grid-template-columns:.8fr 1.2fr;gap:55px;padding:85px 0;border-top:1px solid var(--line);scroll-margin-top:80px}
+.case-image img{width:100%;border-radius:18px;display:block;max-height:760px;object-fit:cover}
+.case-copy h2{font-size:52px;line-height:1.02;letter-spacing:-.045em;margin:8px 0 30px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+.grid h4{font-size:11px;letter-spacing:.13em;margin:0 0 8px}
+.grid p{color:var(--muted);margin:0}
+.role{margin-top:30px;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+.about{padding:95px 0;border-top:1px solid var(--line);display:grid;grid-template-columns:.7fr 1.3fr;gap:60px}
+.about h2{font-size:44px;letter-spacing:-.04em;margin:0}
+.about p{font-size:18px;color:var(--muted)}
+footer{border-top:1px solid var(--line);padding:35px 0;color:var(--muted);font-size:13px;display:flex;justify-content:space-between}
+@media(max-width:800px){
+ .hero,.case,.about{grid-template-columns:1fr;gap:30px}
+ .work-grid{grid-template-columns:1fr}
+ .grid{grid-template-columns:1fr}
+ .nav-links{gap:12px;font-size:12px}
+ .hero{padding:65px 0}
+ .case-copy h2{font-size:40px}
+}
+</style>
+</head>
+<body>
+<nav><div class="container nav-in">
+  <div class="logo">MANDIRA DAS</div>
+  <div class="nav-links"><a href="#work">Work</a><a href="#about">About</a><a href="#contact">Contact</a></div>
+</div></nav>
+
+<header class="container hero">
+  <div>
+    <span class="pill">Graphic Design Portfolio</span>
+    <h1>Design with clarity, character & purpose.</h1>
+    <p>A curated collection of poster, campaign, promotional, cultural, service, and travel design concepts focused on strong visual hierarchy and memorable presentation.</p>
+    <a class="btn" href="#work">Explore selected work ↓</a>
+  </div>
+  <img src="assets/cover.png" alt="Mandira Das graphic design portfolio">
+</header>
+
+<main id="work" class="container">
+  <div class="section-head">
+    <h2>Selected Work</h2>
+    <p>Each project includes a short case study explaining the concept, objective, design approach, and key visual priorities.</p>
+  </div>
+  <div class="work-grid">
+    
+      <a class="card" href="#modern-form">
+        <img src="assets/p3_1.png" alt="Modern Form">
+        <div class="card-body">
+          <span>Fashion Editorial Poster</span>
+          <h3>Modern Form</h3>
+          <p>A bold editorial poster concept built around fashion, movement, and modern visual rhythm.</p>
+        </div>
+      </a>
+    
+      <a class="card" href="#tech-fuels">
+        <img src="assets/p4_1.png" alt="Tech Fuels">
+        <div class="card-body">
+          <span>Technology Campaign</span>
+          <h3>Tech Fuels</h3>
+          <p>A technology campaign concept designed to communicate energy, innovation, and a forward-looking brand personality.</p>
+        </div>
+      </a>
+    
+      <a class="card" href="#purity-of-nature">
+        <img src="assets/p5_1.jpeg" alt="Purity of Nature">
+        <div class="card-body">
+          <span>Luxury Product Campaign</span>
+          <h3>Purity of Nature</h3>
+          <p>A clean product-promotion concept centered on freshness, natural qualities, and premium presentation.</p>
+        </div>
+      </a>
+    
+      <a class="card" href="#crafted-to-celebrate">
+        <img src="assets/p6_1.png" alt="Crafted to Celebrate">
+        <div class="card-body">
+          <span>Traditional / Cultural Campaign</span>
+          <h3>Crafted to Celebrate</h3>
+          <p>A cultural design concept that combines traditional visual cues with a polished promotional layout.</p>
+        </div>
+      </a>
+    
+      <a class="card" href="#advanced-pressure-washing">
+        <img src="assets/p7_1.png" alt="Advanced Pressure Washing">
+        <div class="card-body">
+          <span>Service Advertisement</span>
+          <h3>Advanced Pressure Washing</h3>
+          <p>A service-advertising concept created to make a local cleaning service easy to understand at a glance.</p>
+        </div>
+      </a>
+    
+      <a class="card" href="#travel-the-world">
+        <img src="assets/p8_1.png" alt="Travel the World">
+        <div class="card-body">
+          <span>Travel Promotion</span>
+          <h3>Travel the World</h3>
+          <p>A travel-promotion concept designed to create an aspirational feeling around exploration and destinations.</p>
+        </div>
+      </a>
+    
+  </div>
+  
+    <section class="case" id="modern-form">
+      <div class="case-image"><img src="assets/p3_1.png" alt="Modern Form"></div>
+      <div class="case-copy">
+        <p class="eyebrow">Fashion Editorial Poster</p>
+        <h2>Modern Form</h2>
+        <div class="grid">
+          <div><h4>PROJECT OVERVIEW</h4><p>A bold editorial poster concept built around fashion, movement, and modern visual rhythm.</p></div>
+          <div><h4>OBJECTIVE</h4><p>Create a premium fashion-focused composition that feels contemporary while keeping the main message easy to notice.</p></div>
+          <div><h4>DESIGN APPROACH</h4><p>Used strong typography, high-contrast imagery, controlled spacing, and a clean editorial hierarchy to guide the viewer from headline to supporting details.</p></div>
+          <div><h4>KEY FOCUS</h4><p>Typography hierarchy, image placement, contrast, balance, and overall visual direction.</p></div>
+        </div>
+        <p class="role"><strong>Role:</strong> Concept development &amp; graphic design</p>
+      </div>
+    </section>
+    
+    <section class="case" id="tech-fuels">
+      <div class="case-image"><img src="assets/p4_1.png" alt="Tech Fuels"></div>
+      <div class="case-copy">
+        <p class="eyebrow">Technology Campaign</p>
+        <h2>Tech Fuels</h2>
+        <div class="grid">
+          <div><h4>PROJECT OVERVIEW</h4><p>A technology campaign concept designed to communicate energy, innovation, and a forward-looking brand personality.</p></div>
+          <div><h4>OBJECTIVE</h4><p>Build a visually energetic composition where the product/message remains the main focus.</p></div>
+          <div><h4>DESIGN APPROACH</h4><p>Combined bold type, dynamic composition, product-focused imagery, and a strong visual accent to create a modern technology-advertising feel.</p></div>
+          <div><h4>KEY FOCUS</h4><p>Visual hierarchy, campaign consistency, typography, contrast, and attention flow.</p></div>
+        </div>
+        <p class="role"><strong>Role:</strong> Concept development &amp; graphic design</p>
+      </div>
+    </section>
+    
+    <section class="case" id="purity-of-nature">
+      <div class="case-image"><img src="assets/p5_1.jpeg" alt="Purity of Nature"></div>
+      <div class="case-copy">
+        <p class="eyebrow">Luxury Product Campaign</p>
+        <h2>Purity of Nature</h2>
+        <div class="grid">
+          <div><h4>PROJECT OVERVIEW</h4><p>A clean product-promotion concept centered on freshness, natural qualities, and premium presentation.</p></div>
+          <div><h4>OBJECTIVE</h4><p>Present the product in a refined way while keeping the visual mood calm and luxurious.</p></div>
+          <div><h4>DESIGN APPROACH</h4><p>Focused on whitespace, restrained typography, product emphasis, and a natural visual atmosphere to support a premium feel.</p></div>
+          <div><h4>KEY FOCUS</h4><p>Minimal composition, product focus, readability, and premium visual tone.</p></div>
+        </div>
+        <p class="role"><strong>Role:</strong> Concept development &amp; graphic design</p>
+      </div>
+    </section>
+    
+    <section class="case" id="crafted-to-celebrate">
+      <div class="case-image"><img src="assets/p6_1.png" alt="Crafted to Celebrate"></div>
+      <div class="case-copy">
+        <p class="eyebrow">Traditional / Cultural Campaign</p>
+        <h2>Crafted to Celebrate</h2>
+        <div class="grid">
+          <div><h4>PROJECT OVERVIEW</h4><p>A cultural design concept that combines traditional visual cues with a polished promotional layout.</p></div>
+          <div><h4>OBJECTIVE</h4><p>Create a celebratory composition that feels rooted in culture while remaining visually clear and contemporary.</p></div>
+          <div><h4>DESIGN APPROACH</h4><p>Used decorative elements, balanced typography, rich visual layering, and cultural-inspired composition to create a festive identity.</p></div>
+          <div><h4>KEY FOCUS</h4><p>Cultural visual language, composition, typography, decorative balance, and storytelling.</p></div>
+        </div>
+        <p class="role"><strong>Role:</strong> Concept development &amp; graphic design</p>
+      </div>
+    </section>
+    
+    <section class="case" id="advanced-pressure-washing">
+      <div class="case-image"><img src="assets/p7_1.png" alt="Advanced Pressure Washing"></div>
+      <div class="case-copy">
+        <p class="eyebrow">Service Advertisement</p>
+        <h2>Advanced Pressure Washing</h2>
+        <div class="grid">
+          <div><h4>PROJECT OVERVIEW</h4><p>A service-advertising concept created to make a local cleaning service easy to understand at a glance.</p></div>
+          <div><h4>OBJECTIVE</h4><p>Communicate the service, value, and call-to-action clearly for potential customers.</p></div>
+          <div><h4>DESIGN APPROACH</h4><p>Organized the design around service imagery, strong headline hierarchy, supporting information, and a clear promotional structure.</p></div>
+          <div><h4>KEY FOCUS</h4><p>Information hierarchy, service communication, call-to-action visibility, and promotional layout.</p></div>
+        </div>
+        <p class="role"><strong>Role:</strong> Concept development &amp; graphic design</p>
+      </div>
+    </section>
+    
+    <section class="case" id="travel-the-world">
+      <div class="case-image"><img src="assets/p8_1.png" alt="Travel the World"></div>
+      <div class="case-copy">
+        <p class="eyebrow">Travel Promotion</p>
+        <h2>Travel the World</h2>
+        <div class="grid">
+          <div><h4>PROJECT OVERVIEW</h4><p>A travel-promotion concept designed to create an aspirational feeling around exploration and destinations.</p></div>
+          <div><h4>OBJECTIVE</h4><p>Use imagery and typography to create excitement while keeping the promotional message readable.</p></div>
+          <div><h4>DESIGN APPROACH</h4><p>Built a destination-led composition with strong imagery, headline hierarchy, and supporting text arranged for quick visual scanning.</p></div>
+          <div><h4>KEY FOCUS</h4><p>Image selection, hierarchy, composition, readability, and promotional storytelling.</p></div>
+        </div>
+        <p class="role"><strong>Role:</strong> Concept development &amp; graphic design</p>
+      </div>
+    </section>
+    
+
+  <section id="about" class="about">
+    <h2>About the designer</h2>
+    <div>
+      <p>I’m Mandira Das, a graphic designer interested in creating clean, expressive visuals that communicate quickly and feel intentional.</p>
+      <p>My work explores poster design, promotional graphics, campaign visuals, packaging-inspired compositions, social media creatives, and other visual communication projects.</p>
+      <p>This portfolio presents selected concept and practice work, with a focus on composition, typography, visual storytelling, and presentation.</p>
+    </div>
+  </section>
+</main>
+
+<footer id="contact" class="container">
+  <span>© 2026 Mandira Das</span>
+  <span>Graphic Design Portfolio</span>
+</footer>
+</body>
+</html>
